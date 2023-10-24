@@ -1,0 +1,92 @@
+:root {
+    --bg-primary: #000000;
+    --text-light: #FFFFFF;
+    --title-primary-color: #F5F5F7;
+    --subtitle-color: #6E6E73;
+    --action-color: #2997FF;
+}
+
+header {
+    background-color: var(--bg-primary);
+    color: var(--text-light);
+    height: fit-content;
+    opacity: 0.9;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    padding: 12px 0;
+}
+
+header nav ul {
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+header nav ul li {
+    list-style: none;
+    min-width: fit-content;
+    height: fit-content;
+    padding: 0 0.75rem;
+    font-size: small;
+    cursor: pointer;
+}
+
+main section {
+    text-align: center;
+    background-color: var(--bg-primary);
+}
+
+main section .text-wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.1rem;
+}
+
+main section h1 {
+    color: var(--title-primary-color);
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 3.75rem;
+    letter-spacing: -0.28px;
+    margin-bottom: .5rem;
+}
+
+main section h2 {
+    color: var(--subtitle-color);
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 2rem;
+    letter-spacing: 0.11px;
+    margin-bottom: 1rem;
+}
+
+main section sub {
+    font-size: 0.9rem;
+}
+
+main section a {
+    color: var(--action-color);
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+main section a:hover {
+    text-decoration: underline;
+}
+
+main section img {
+    width: 100%;
+    height: auto;
+}
+
