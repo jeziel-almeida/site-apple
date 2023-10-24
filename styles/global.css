@@ -1,6 +1,7 @@
 :root {
     --bg-primary: #000000;
     --text-light: #FFFFFF;
+    --text-dark: #1D1D1F;
     --title-primary-color: #F5F5F7;
     --subtitle-color: #6E6E73;
     --action-color: #2997FF;
@@ -40,12 +41,11 @@ header nav ul li {
 main {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
 }
 
 main section {
     text-align: center;
-    background-color: var(--bg-primary);
     color: white;
     position: relative;
 }
@@ -53,6 +53,18 @@ main section {
 main section img {
     width: 100%;
     height: auto;
+}
+
+main section a {
+    color: var(--action-color);
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+main section a:hover {
+    text-decoration: underline;
 }
 
 main .main-section .text-wrapper {
@@ -85,18 +97,6 @@ main .main-section h2 {
 
 main .main-section sub {
     font-size: 0.9rem;
-}
-
-main .main-section a {
-    color: var(--action-color);
-    line-height: 1.8rem;
-    font-size: 1.2rem;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-main .main-section a:hover {
-    text-decoration: underline;
 }
 
 main .spirited-section > div {
@@ -141,4 +141,89 @@ main .spirited-section .spirited-description span {
     line-height: 1.5rem;
     display: block;
     letter-spacing: 0.23px;
+}
+
+main .iphone-section .text-wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.1rem;
+}
+
+main .iphone-section h2 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 3.75rem;
+    letter-spacing: -0.28px;
+    margin-bottom: .5rem;
+    color: var(--text-dark);
+}
+
+main .iphone-section p {
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 2rem;
+    letter-spacing: 0.11px;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+main .iphone-section .link-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+/** PRODUCTS SECTION  */
+
+main .products-section {
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+main .products-section > div {
+    position: relative;
+}
+
+main .products-section .text-wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.4rem;
+}
+
+main .products-section h2 {
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+    margin-bottom: .4rem;
+}
+
+main .products-section p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: .5rem;
+}
+
+main .products-section .link-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+main .products-section .link-wrapper a {
+    font-size: 1rem;
+}
+
+main .products-section .iphone-card {
+    color: var(--title-primary-color);
 }
