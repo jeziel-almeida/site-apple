@@ -67,6 +67,8 @@ main section a:hover {
     text-decoration: underline;
 }
 
+/** MAIN SECTION  */
+
 main .main-section .text-wrapper {
     position: absolute;
     left: 50%;
@@ -98,6 +100,8 @@ main .main-section h2 {
 main .main-section sub {
     font-size: 0.9rem;
 }
+
+/** SPIRITED SECTION  */
 
 main .spirited-section > div {
     position: absolute;
@@ -143,6 +147,8 @@ main .spirited-section .spirited-description span {
     letter-spacing: 0.23px;
 }
 
+/** IPHONE SECTION  */
+
 main .iphone-section .text-wrapper {
     position: absolute;
     left: 50%;
@@ -185,6 +191,8 @@ main .products-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    padding: 0 5px;
 }
 
 main .products-section > div {
@@ -220,10 +228,104 @@ main .products-section .link-wrapper {
     gap: 1.25rem;
 }
 
-main .products-section .link-wrapper a {
+main .products-section a {
     font-size: 1rem;
 }
 
+/** IPHONE-CARD */
+
 main .products-section .iphone-card {
     color: var(--title-primary-color);
+}
+
+/** AIRPODS-CARD */
+
+main .products-section .airpods-gift-card {
+    width: 30px;
+    height: 37px;
+    margin-bottom: .5rem;
+}
+
+/** WATCH-SERIES-8-CARD */
+
+main .products-section .watch-card p {
+    color: var(--title-primary-color);
+    font-weight: 300;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+
+main .products-section .watch-card .series-8-logo {
+    width: 430px;
+    height: 52px;
+    margin-top: .5rem;
+}
+
+/** WATCH-ULTRA-CARD */
+
+main .products-section .watch-ultra-card p {
+    color: var(--text-dark);
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+
+main .products-section .watch-ultra-card .applewatch-ultra-logo {
+    width: 430px;
+    height: 52px;
+    margin-top: .5rem;
+}
+
+/** APPLE-CARD-CARD */
+
+main .products-section .apple-card-card p {
+    color: var(--text-dark);
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+
+main .products-section .apple-card-card .apple-card-logo {
+    width: 430px;
+    height: 33px;
+    margin-top: .5rem;
+}
+
+/** CAROUSEL SECTION */
+
+main .carousel-section .nav-images {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+}
+
+main .carousel-section .nav-images .partial-img {
+    height: 600px;
+    width: 70px;
+}
+
+main .carousel-section .nav-images .whole-img {
+    height: 600px;
+    width: 1100px;;
+}
+
+main .carousel-section .nav-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 24px;
+}
+
+main .carousel-section .nav-buttons .btn {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.16);
+    border: none;
+    padding: 0;
+}
+
+main .carousel-section .nav-buttons .btn:first-child {
+    background-color: rgba(0, 0, 0, 0.56);
 }
