@@ -38,6 +38,11 @@ header nav ul li {
     cursor: pointer;
 }
 
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -324,6 +329,7 @@ main .carousel-section .nav-buttons .btn {
     background-color: rgba(0, 0, 0, 0.16);
     border: none;
     padding: 0;
+    cursor: pointer;
 }
 
 main .carousel-section .nav-buttons .btn:first-child {

@@ -1,0 +1,320 @@
+:root {
+    --bg-primary: #000000;
+    --text-light: #FFFFFF;
+    --text-dark: #1D1D1F;
+    --title-primary-color: #F5F5F7;
+    --subtitle-color: #6E6E73;
+    --action-color: #2997FF;
+    --spirited-main-color: #DED2B9;
+    --header-bg-gray: rgba(0,0,0,0.8);
+    --text-gray: #6E6E73;
+    --light-color: #D2D2D7;
+    --border-light: 1px solid #D2D2D7;
+    --bg-light-gray: #F2F2F2;
+}
+
+header {
+    background-color: var(--header-bg-gray);
+    color: var(--text-light);
+    height: fit-content;
+    opacity: 0.9;
+    padding: 12px 0;
+}
+
+header nav ul {
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+header nav ul li {
+    list-style: none;
+    min-width: fit-content;
+    height: fit-content;
+    padding: 0 0.75rem;
+    font-size: small;
+    cursor: pointer;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--text-light);
+    height: 3.25rem;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-bottom: var(--border-light);
+}
+
+.heading-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.heading h3 {
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    letter-spacing: 0.09px;
+}
+
+.heading div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+}
+
+main section a {
+    color: var(--action-color);
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+main section a:hover {
+    text-decoration: underline;
+}
+
+main .main-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: var(--title-primary-color);
+    height: 383px;
+    overflow: hidden;
+}
+
+main .main-section .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-left: 8rem;
+}
+
+main .main-section h1 {
+    font-size: 3rem;
+    line-height: 3.2rem;
+    letter-spacing: -0.14px;
+    color: var(--text-dark);
+}
+
+main .main-section p {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.23px;
+    font-weight: 300;
+}
+
+main .main-section img {
+    position: absolute;
+    top: -97px;
+    right: -80px;
+}
+
+main .search-section {
+    height: 234px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 16px;
+    padding: 3rem 0;
+}
+
+main .search-section h2 {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    letter-spacing: 0.13px;
+}
+
+main .search-section input {
+    height: 56px;
+    width: 578px;
+    font-size: 18px;
+    padding: 0 2.5rem;
+    border: var(--border-light);
+    border-radius: 10px;
+    color: var(--text-gray);
+}
+
+main .search-section .input-wrapper {
+    position: relative
+}
+
+main .search-section img {
+    position: absolute;
+    top: 30%;
+    left: 16px;
+}
+
+main .browse-section .browser-heading {
+    height: 44px;
+    width: 912px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-bottom: var(--border-light);
+}
+
+main .browse-section .browser-heading p {
+    margin: 0 30px;
+    font-size: 17px;
+    line-height: 17px;
+    letter-spacing: -0.36px;
+    color: var(--text-dark);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+main .browse-section .browser-heading p:last-child {
+    color: var(--subtitle-color);
+}
+
+main .browse-section ul {
+    height: 252px;
+    width: 980px;
+    margin: 30px auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    border-bottom: var(--border-light);
+}
+
+main .browse-section ul li {
+    list-style: none;
+    font-size: 1rem;
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 19px;
+}
+
+main .browse-section ul li:hover {
+    color: var(--action-color);
+    cursor: pointer;
+}
+
+main .browse-section ul li div {
+    width: 143px;
+    height: 143px;
+    border: var(--border-light);
+    padding: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+main .holiday-section {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .holiday-section h3 {
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+    margin-bottom: 1.2rem;
+}
+
+main .holiday-section .cards-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .holiday-section .cards-wrapper .card {
+    width: 356px;
+    height: 598px;
+    background-color: var(--bg-light-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin: 5px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+main .holiday-section .cards-wrapper .card .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+main .holiday-section .cards-wrapper .card .text-wrapper p {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.12px;
+    color: #BF4800;
+}
+
+main .holiday-section .cards-wrapper .card .text-wrapper h4 {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.22px;
+    color: var(--text-dark);
+}
+
+main .holiday-section .nav-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 24px;
+}
+
+main .holiday-section .nav-buttons .btn {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.16);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+main .holiday-section .nav-buttons .btn:first-child {
+    background-color: rgba(0, 0, 0, 0.56);
+}
+
+main .gift-guide-banner {
+    margin-top: 4rem;
+    color: var(--text-light);
+    background-color: #01012A;
+    height: 481px;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main .gift-guide-banner .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .gift-guide-banner h2 {
+    font-size: 4rem;
+}
